@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">Monika Maurya's Weather App</div>
+        <div class="bod">
+            <div class="sidebar">
+                <div class="side-table">
+                    <div class="get-weather">
+                        <button class="get-weather-btn" onclick="myfun()">Get Weather</button>
+                    </div>
+                    <div class="city-table">
+                        <span class="city">City</span>
+                        <span class="city-name">London</span>
+                        <span class="city-name">New York</span>
+                        <span class="city-name">Los Angeles</span>
+                        <span class="city-name">Las Vegas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="sub-nav">
+                    <input type="text" placeholder="Enter City Name" id="input" />
+                    <button class="search" onclick="match()">Search</button>
+                </div>
+
+                <div class="table-section">
+                    <table class="table-main" border="2">
+                        <thead class="table-main">
+                            <tr class="tr1">
+                                <th class="td1">City</th>
+                                <th class="td1">Description</th>
+                                <th class="td1">Temperature(°C)</th>
+                                <th class="td1">Pressure(hPa)</th>
+                                <th class="td1">Date age (hrs)</th>
+                                <th class="td1"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="TBody"></tbody>
+                    </table>
+                    
+                        <h2 id="nodata">No Data</h2>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
